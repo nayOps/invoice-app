@@ -2,7 +2,7 @@
     <header>
         <div class="branding">
             <img src="@/assets/file-invoice-dollar-solid.png" alt="" srcset="">
-            <router-  /> 
+            <router-view /> 
         </div>
     </header>
 </template>
