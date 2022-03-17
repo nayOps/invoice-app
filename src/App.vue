@@ -1,7 +1,7 @@
 <template>
 
 <div>
-  <div v-if="!mobile" class="app flex-column">
+  <div v-if="!mobile" class="app flex flex-column">
       <Navigation />
       <div class="app-content flex flex-column">
         <router-view />
@@ -62,17 +62,6 @@ export default {
 
 }
 
-button,
-.button {
-  cursor: pointer;
-  padding: 16px 24px;
-  border-radius: 30px;
-  border: none;
-  font-size: 12px;
-  margin-right: 8px;
-  color: #fff;
-}
-
 .app {
   background-color: #141625;
   min-height: 100vh;
@@ -85,6 +74,17 @@ button,
     flex: 1;
     position: relative;
   }
+}
+
+button,
+.button {
+  cursor: pointer;
+  padding: 16px 24px;
+  border-radius: 30px;
+  border: none;
+  font-size: 12px;
+  margin-right: 8px;
+  color: #fff;
 }
 
 .mobile-message {
