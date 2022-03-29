@@ -116,7 +116,7 @@
                 <button v-if="editInvoice" type="sumbit" class="purple">Update Invoice</button>
                 </div>
             </div>
-        </form>
+        </form> 
 
     </div>
 </template>
@@ -160,16 +160,17 @@ export default {
         ...mapMutations(['TOGGLE_INVOICE']),
 
         closeInvoice() {
-            this.TOGGLE_INVOICE()
+            this.TOGGLE_INVOICE();
         },
     
         watch : {
             paymentTerms() {
+
                 const futureDate = new Date();
                 this.paymentDueDateUnix = futureDate.setDate(futureDate.getDate() + parseInt(this.paymentTerms));
                 this.paymentDueDate = new Date(this.paymentDueDateUnix).toLocaleDateString("en-us", this.dateOptions);
-            }
-        }
+            },
+        },
     }
 }
 </script>
@@ -195,7 +196,7 @@ export default {
     padding: 56px;
     max-width: 700px;
     width: 100%;
-    background-color: #141625;
+    background-color: #141625   ;
     color: #fff;
     box-shadow: 10px 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 

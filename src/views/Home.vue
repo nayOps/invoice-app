@@ -2,7 +2,7 @@
     <div class="home container">
         <!-- header -->
                 
-        <div class="header">
+        <div class="header flex">
             <div class="left flex flex-column">
                 <h1>Invoices</h1>
                 <span>There are 4 total invoices</span>
@@ -20,7 +20,7 @@
                 </div>
                 <div @click="newInvoice" class="button flex">
                     <div class="inner-button flex">
-                        <img src="@/assets/icon-plus.svg" alt="" srcset="">
+                        <img src="@/assets/icon-plus.svg" alt="" />
                     </div>
                     <span> New Invoice </span>
                 </div>
@@ -159,3 +159,6 @@
 }
 
 </style>
+
+
+// QXsx#wA(HN,h
